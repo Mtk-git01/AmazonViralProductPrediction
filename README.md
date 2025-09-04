@@ -1,11 +1,14 @@
 # Amazon Viral Product_Prediction Model
 - Data Source: Amazon Keepa, External Factors
 - All Keepa product data should be stored in your folder (e.g., ./data/raw_data/*.pkl)  
-- Use "keepa_advanced_data_downloader.ipynb" to download product raw data from keepa using your API key, token
+- Use "keepa_advanced_data_downloader.ipynb" to download product raw data from keepa using API key, token
 ## Objective
 - To build a prediction model for identifying future viral Amazon products using historical product raw data extracted via the Amazon Keepa API.
-- Viral Definition: SalesRank growth rate < - 30% in 30 days
 <img width="1998" height="1125" alt="image" src="https://github.com/user-attachments/assets/af63e396-bb64-4f82-9e86-13e94a8422dd" />
+
+## Target Variable:  
+**Go_Viral**: Binary (1 if sales rank improves by ≥30% over 30 days, 0 otherwise). The viral ratio is the percentage of timestamps meeting this threshold, averaging 16.76% across products.
+<img width="1124" height="555" alt="image" src="https://github.com/user-attachments/assets/0d1e61d0-1807-4eb0-812d-54318844cdec" />
 
 ## Background  
 
